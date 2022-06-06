@@ -1,0 +1,9 @@
+- name: Using a role from a collection from a playbook in a collection
+  hosts: all
+  gather_facts: false
+
+  tasks:
+
+  - name: Run the role_1 role
+    ansible.builtin.include_role:
+      name: 'bevans_demo.sample.role_1'
